@@ -5,53 +5,49 @@ console.log("EXERCISE 1:\n==========\n");
 
 
 class Person {
-    constructor(name = "Nameless", pets = 0, residence = "None", hobbies = []) {
+    constructor(name, pet, residence, hobbies) {
         this.name = name;
-        this.pets = pets;
+        this.pet = pet;
         this.residence = residence;
         this.hobbies = hobbies;
     }
-    addHobby (hobby) {
-        this.hobbies.push(hobby)
+    info() {
+        console.log(`Hello, friends! My name is ${this.name} and I live in ${this.residence}. 
+        I have ${this.pet} pet, a dog named Dexter, and one of my hobbies is ${this.hobbies[
+            Math.floor(Math.random() * (this.hobbies.length))]}.`);
     }
-    removeHobby (oldHobby) {
-        this.hobbies = this.hobbies.filter ((hobby) => hobby != oldHobby
-        );
-    }
-
-    greet () {
-        console.log(`Hello fellow human!`);
-    }
-// Exercise 2
-    greetByName (name) {
-        console.log(`Hello, ${name}!`)
+    greeting() {
+        let input = prompt("What is your name?");
+        console.log(`Hello ${input}!`);
     }
 }
-let Elizabeth= new Person ('Elizabeth', 1, "21291", ['creative writing', 'roller skating']);
 
-
-Elizabeth.removeHobby ('creative writing');
-Elizabeth.addHobby ('roller skating');
-Elizabeth.greet ();
-// Elizabeth.greetByName (Kennedy);
-console.log (Elizabeth);
-
-console.log("EXERCISE 2:\n==========\n");
 
 class Coder extends Person {
-    constructor ( name, pets, residence, hobbies) {
-        super (name, pets, residence, hobbies)
-        this.occupation = "Full Stack Web Developer"
+    constructor(name, pet, residence, hobbies) {
+        super(name, pet, residence, hobbies);
+        this.occupation = "Full Stack Web Developer";
     }
-    greet (name1) {
-        console.log (`Hello ${name1} fellow coder`);
-
+    greeting() {
+        console.log("Hello Coder!");
     }
-}
+};
 
-let LaloSalamanco = new Coder ("Lalo Salamanco", 2, "home 2", ["cooking", "dancing"]);
-LaloSalamanco.greet (Elizabeth.name);
-Elizabeth.greetByName (LaloSalamanco.name);
+
+
+let Elizabeth= new Person("Elizabeth", 1, "Huntington Beach, California, USA", ["Writing", 
+"Cosmetology", "Coding", "Yoga", "Roller Skating"]);
+
+let LaloSalamanco= new Coder("Lalo Salamanco", 1, "Mexico" ["Cooking", "Exotic Dancing"]);
+
+console.log("\nPerson\n");
+Elizabeth.info();
+Elizabeth.greeting();
+
+console.log("\nCoder\n");
+LaloSalamanco.info();
+LaloSalamanco.greeting(); 
+   
 
 
 
