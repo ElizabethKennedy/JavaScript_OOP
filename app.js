@@ -1,4 +1,4 @@
-console.log("We're Down With OOP!\n==========\n");
+console.log("Hello World! We're Down With OOP!\n==========\n");
 
 // Exercise 1
 console.log("EXERCISE 1:\n==========\n");
@@ -22,6 +22,9 @@ class Person {
     }
 }
 
+ 
+
+
 
 class Coder extends Person {
     constructor(name, pet, residence, hobbies) {
@@ -32,6 +35,15 @@ class Coder extends Person {
         console.log("Hello Coder!");
     }
 };
+    
+
+let elizabeth = new Person ('Elizabeth', 1, "Huntington Beach, California, USA", ['Writing', 
+'Cosmetology', 'Coding', 'Yoga', 'Roller Skating']);
+
+
+
+
+
 
 
 
