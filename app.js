@@ -24,7 +24,8 @@ class Person {
 
  
 
-
+// Exercise 2
+console.log("EXERCISE 2:\n==========\n");
 
 class Coder extends Person {
     constructor(name, pet, residence, hobbies) {
@@ -45,12 +46,14 @@ let elizabeth = new Person ('Elizabeth', 1, "Huntington Beach, California, USA",
 
 
 
+// Exercise 3
+console.log("EXERCISE 3:\n==========\n");
 
 
 let Elizabeth= new Person("Elizabeth", 1, "Huntington Beach, California, USA", ["Writing", 
 "Cosmetology", "Coding", "Yoga", "Roller Skating"]);
 
-let LaloSalamanco= new Coder("Lalo Salamanco", 1, "Mexico" ["Cooking", "Exotic Dancing"]);
+let LaloSalamanco= new Coder("Lalo Salamanco", 1, "Mexico", ["Cooking", "Exotic Dancing"]);
 
 console.log("\nPerson\n");
 Elizabeth.info();
