@@ -1,0 +1,22 @@
+body {
+    color: darksalmon;
+    background-color: greenyellow;
+    font-family: Brisk 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 90%;
+    margin: 0px;
+    text-align: center;}
+
+h1 {
+    background-color: DarkCyan;
+}
+    
+div {
+    height: 300px;
+    width: 400px;
+    background-color:  hotpink;
+    }
+
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
