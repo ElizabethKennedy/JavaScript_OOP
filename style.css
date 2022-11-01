@@ -19,4 +19,12 @@ div {
 h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
+
+}
+
+footer {
+    font-family: 'Cream Cake';
+    font-weight: 300;
+    font-size: medium;
+    color: maroon;
 }

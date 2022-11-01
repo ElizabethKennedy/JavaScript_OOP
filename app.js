@@ -22,7 +22,8 @@ class Person {
     }
 }
 
- 
+
+
 
 // Exercise 2
 console.log("EXERCISE 2:\n==========\n");
