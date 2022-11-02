@@ -3,8 +3,14 @@ body {
     background-color: greenyellow;
     font-family: Brisk 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 90%;
-    margin: 0px;
-    text-align: center;}
+    margin: 30px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 250px;
+    padding-right: 250px;
+    text-align: center;
+
+}
 
 h1 {
     background-color: DarkCyan;
@@ -12,19 +18,33 @@ h1 {
     
 div {
     height: 300px;
-    width: 400px;
+    width: 700px;
     background-color:  hotpink;
+    padding: 10px;
     }
 
 h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
+    font-size: 10px;
 
 }
 
-footer {
-    font-family: 'Cream Cake';
-    font-weight: 300;
-    font-size: medium;
-    color: maroon;
+.giphy-embed {
+    border-width: 25px;
+    border-style: 3px dotted #bbbbaa;
+    margin-bottom: 300px;
+    padding: 30px, 30px, 300px, 30px;
+    position: fixed;
+    display: center;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    float: center;
+    clear: left;
 }
+
+.align-center{
+    display: center;
+}
+
